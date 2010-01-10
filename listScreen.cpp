@@ -54,7 +54,6 @@ void ListScreen::onOpenJar(int row)
 {
     QContent c = _cs->content(row);
     QString jarPath = "file:///" + c.fileName();
-    jarPath.replace(" ", "\ ");
     QString arg1 = "internal";
     QString classPath = "com.sun.midp.scriptutil.CommandLineInstaller";
     QString arg2 = "I";
